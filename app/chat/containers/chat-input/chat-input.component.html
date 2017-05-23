@@ -1,0 +1,14 @@
+<input
+    type="text"
+    class="message"
+    placeholder="Type your message"
+    [(ngModel)]="message"
+    (keydown)="messageKeyDown($event)"
+/>
+<button
+    *ngIf="message.length > 0"
+    class="send"
+    (click)="sendMessage()"
+>
+    Send
+</button>

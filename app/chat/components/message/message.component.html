@@ -1,0 +1,11 @@
+<div
+    [ngClass]="{
+            'bubble': true,
+            'me': byMe
+          }"
+>
+    <span class="author">{{ author }}</span>
+    <!--<span class="time">{{ formatTime(message.time) }}</span>-->
+    <span class="time">{{ time | date: "HH:mm" }}</span>
+    <span class="message">{{ message }}</span>
+</div>

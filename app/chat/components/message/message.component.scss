@@ -1,0 +1,27 @@
+.bubble {
+    color: #fff;
+    background: #009688;
+    padding: 4px 10px;
+    margin: 4px 0px 4px 10%;
+    border-radius: 16px;
+    width: 90%;
+
+    .author {
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .message {
+        display: block;
+        font-weight: 600;
+    }
+
+    .time {
+        float: right;
+    }
+
+    &.me {
+        background: #00BCD4;
+        margin-left: 0%;
+    }
+}

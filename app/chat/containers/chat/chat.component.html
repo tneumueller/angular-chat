@@ -1,0 +1,12 @@
+<div class="chat_window">
+    <ul class="chat">
+        <li *ngFor="let message of chat">
+            <message
+                [author]="message.author"
+                [time]="message.time"
+                [byMe]="message.author == name"
+                [message]="message.message"
+            ></message>
+        </li>
+    </ul>
+</div>

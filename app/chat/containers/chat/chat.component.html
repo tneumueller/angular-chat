@@ -2,10 +2,13 @@
     <ul class="chat">
         <li *ngFor="let message of chat">
             <message
+                [id]="message.id"
                 [author]="message.author"
                 [time]="message.time"
-                [byMe]="message.author == name"
+                [byMe]="message.author == author"
                 [message]="message.message"
+                [edited]="message.edited === true"
+                [deleted]="message.deleted === true"
             ></message>
         </li>
     </ul>

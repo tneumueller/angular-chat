@@ -20,6 +20,7 @@ export class ChatInputComponent {
 
     sendMessage() {
         this.messageEntered.emit(this.message);
+        this.message = "";
     }
 
     messageKeyDown(event: any) {

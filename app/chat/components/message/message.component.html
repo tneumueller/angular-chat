@@ -1,11 +1,19 @@
 <div
     [ngClass]="{
             'bubble': true,
-            'me': byMe
+            'me': byMe,
+            'deleted': deleted
           }"
 >
-    <span class="author">{{ author }}</span>
+    <span class="author">#{{ id }} {{ author }}</span>
     <!--<span class="time">{{ formatTime(message.time) }}</span>-->
     <span class="time">{{ time | date: "HH:mm" }}</span>
     <span class="message">{{ message }}</span>
+
+    <span *ngIf="byMe" class="interaction">
+        <a>Edit</a>
+        <a>Delete</a>
+
+        <span *ngIf="edited" class="edited">Edited</span>
+    </span>
 </div>

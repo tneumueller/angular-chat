@@ -43,11 +43,11 @@ module.exports = {
     ]
   },
   output: {
-    chunkFilename: '[name].chunk.js',
-    filename: '[name].js',
+    chunkFilename: '[author].chunk.js',
+    filename: '[author].js',
     path: path.resolve(cwd, 'build'),
     publicPath: '/build/',
-    sourceMapFilename: '[name].map'
+    sourceMapFilename: '[author].map'
   },
   module: {
     rules: [

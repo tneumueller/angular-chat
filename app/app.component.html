@@ -1,5 +1,9 @@
 <div class="chat_container">
-    <chat></chat>
+    <chat
+        [chat]="chat"
+        [author]="author"
+    >
+    </chat>
     <chat-input
         (messageEntered)="onMessageEntered($event)"
     >
